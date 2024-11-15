@@ -21,6 +21,7 @@ $redbg = "\e[101m";
 $grey = "\e[37m";
 $cyan = "\e[36m";
 $bold   = "\e[1m";
+
 function redhawk_banner(){
   echo "\e[91;1m
            All In One Tool For\e[36m Information Gathering\e[91m And\e[32m Vulnerability Scanning\e[91m
@@ -41,4 +42,5 @@ function redhawk_banner(){
 \e[32m
   \n";
 }
+
 ?>
