@@ -1,9 +1,5 @@
-<p align="center">
-	<img src="https://i.imgur.com/GNWwMFb.png" width="600px">
-</p>
-
 #### Version 2.0.0
-#### By R3D#@0R_2H1N A.K.A Tuhinshubhra
+#### By **ParamChauhan101** (Arch Optimized) A.K.A R3D#@0R_2H1N
 All in one tool for **Information Gathering** and **Vulnerability Scanning**
 
 # Scans That You Can Perform Using RED HAWK :
@@ -70,58 +66,35 @@ All in one tool for **Information Gathering** and **Vulnerability Scanning**
 	- Many Other Internal Fixes
 
 # Installation:
-1. Run The Tool and Type `fix` This will Install All Required Modules.
-2. For The Bloggers View To Work Properly you have to configure RED HAWK with moz.com's api keys for that follow the following steps:
+1. Run the tool and type `fix`. This will install all required modules for **Arch Linux**.
+2. For the Bloggers View to work properly, you need to configure RED HAWK with moz.com's API keys. Follow these steps:
 
 **How To Configure RED HAWK with moz.com for Bloggers View Scan**
-+ Create an account in moz follow this link : https://moz.com/community/join
-+ After successful account creation and completing the verification you need to generate the API Keys
-+ You can get your API Keys here: https://moz.com/products/mozscape/access
-+ Get your AccessID and SecretKey and replace the `$accessID` and `$secretKey` variable's value in the `config.php` file
-+ All set, now you can enjoy the bloggers view.
++ Create an account on moz by following this link: https://moz.com/community/join
++ After successful account creation and verification, generate your API keys here: https://moz.com/products/mozscape/access
++ Replace the `$accessID` and `$secretKey` variables' values in the `config.php` file with your AccessID and SecretKey.
++ Now you can enjoy the Bloggers View.
 
 # Usage:
-- git clone `https://github.com/Tuhinshubhra/RED_HAWK`
-- cd RED_HAWK
-- php rhawk.php
-- Use the "help" command to see the command list or type in the domain name you want to scan (without Http:// OR Https://).
-- Select whether The Site Runs On HTTPS or not.
-- Select the type of scan you want to perform
-- Leave the rest to the scanner
+- `git clone https://github.com/paramchauhan101/RED_HAWK_FOR_ARCH.git`
+- `cd RED_HAWK_FOR_ARCH`
+- `php rhawk.php`
+- Use the "help" command to see the list of commands or type in the domain name you want to scan (without Http:// or Https://).
+- Select whether the site runs on HTTPS or not.
+- Choose the type of scan you want to perform.
+- Leave the rest to the scanner.
 
 # List of CMS Supported
-RED HAWK's `CMS Detector` currently is able to detect the following CMSs (Content Management Systems) in case the website is using some other CMS, Detector will return _could not detect_.
+RED HAWK's `CMS Detector` can detect the following CMSs (Content Management Systems). If the website is using a different CMS, it will return _could not detect_.
 
 - WordPress
 - Joomla
 - Drupal
 - Magento
+
 # Known Issues
-**ISSUE:** Scanner Stops Working After Cloudflare Detection!
+**ISSUE:** Scanner stops working after Cloudflare detection.
 
-**SOLUTION:** Use The `fix` Command OR Manually Install *php-curl* & *php-xml*
-
-Watch The Video TO See How To Solve This Isuue : https://www.youtube.com/watch?v=QuFPY9NFTM8
-
-# Video Demonstration
-<a href="https://www.youtube.com/watch?v=Jt9kBFiJDrE" target="_blank"><img src="https://i.imgur.com/SXDWohl.png" 
-alt="Video Thumbnail" border="10" /></a>
-
-# Suggestions And Feedbacks
-Want to contribute to RED HAWK or point out something wrong? Just create a new issue here: https://github.com/Tuhinshubhra/RED_HAWK/issues/new
-I'd love to hear from you.
-
-# Support and Donations
-Found RED HAWK cool? well you could buy me a cup of tea ;) (no alcohol plz xD) just send any amount of donations (in BTC) to this address : **1NbiQidWWVVhWknsfPSN1MuksF8cbXWCku**
-
-Can't donate? well that's no problem just drop a **THANK YOU** this will motivate me to create more exciting stuffs for you ;)
-
-# TODOs
-
-- Make a proper update option ( Installs current version automatically )
-- Add more CMS to the detector
-- Improve The WordPress Scanner ( Add User, Theme & Plugins Enumeration )
-- Create a web version of the scanner
-- Add XSS & LFI Scanner
-- Improve the Links grabber thingy under bloggers view
-- Add some other scans under the Bloggers View
+**SOLUTION:** Use the `fix` command or manually install *php-curl* & *php-xml* using the following Arch-specific commands:
+```bash
+sudo pacman -S php-curl php-xml
